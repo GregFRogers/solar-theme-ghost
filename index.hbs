@@ -8,7 +8,13 @@
     <h1><a href="{{url}}">{{title}}</a></h1>
 
     <div class="post-content"><p>{{excerpt}}&hellip;</p></div>
-    
+
+    <footer class="post meta">
+      {{author}}
+      {{tages prefix=" on "}}
+      <time class="post-date" datetime={{date format='YYYY-MM-DD'}}>{{date format="DD MMM YYYY"}}</time>
+    </footer>
+
 </article>
 
 {{/foreach}}
